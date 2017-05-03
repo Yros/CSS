@@ -45,9 +45,9 @@ p::first-letter {
 .bubble
 {
 position: relative;
-width: 155px;
-height: 50px;
-padding: 3px;
+width: auto;
+height: auto;
+padding: 10px;
 background: #FFFFFF;
 -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
