@@ -12,10 +12,11 @@
 		font-family: 'Tangerine', cursive;
 		font-family: 'Great Vibes', cursive;
 	*/
+/*
 @import url('https://cdn.rawgit.com/Yros/CSS/981dfa15/hover.css');
-	/* Usage Example :
+	Usage Example :
 		http://ianlunn.github.io/Hover/
-	*/
+*/
 
 /* Formatage Texte Entre-Monde */
 p {
@@ -37,53 +38,12 @@ p::first-letter {
 	font-family: 'Lora', serif;
 	font-size: 16px;
 	color: #eaffea;
-	text-shadow: 0px 2px 3px #FFF;
+	text-shadow: 0px 2px 10px #FFF;
 }
 
 
 /* Bubbles */
-.bubble
-{
-position: relative;
-width: auto;
-height: auto;
-padding: 10px;
-background: #FFFFFF;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
-border: #7F7F7F solid 1px;
-}
 
-.bubble:after
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 15px 0 15px 15px;
-border-color: transparent #FFFFFF;
-display: block;
-width: 0;
-z-index: 1;
-margin-top: -15px;
-right: -15px;
-top: 50%;
-}
-
-.bubble:before
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 15px 0 15px 15px;
-border-color: transparent #7F7F7F;
-display: block;
-width: 0;
-z-index: 0;
-margin-top: -15px;
-right: -16px;
-top: 50%;
-}
 
 /* DIVERS */
 @keyframes fadeIn { 0% { opacity: 0; height: 0; } 100% { opacity: 1; height: auto; } }
