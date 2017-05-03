@@ -1,0 +1,49 @@
+/* Date : 03/05/17
+* Auteur : Yros <yros.tw@gmail.com>
+* Description : Ajout des éléments .css élémentaires au forum.
+* Version : 1.0
+*/
+
+/* Importation des fichiers liés */
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Great+Vibes|Lora|Tangerine');
+	/* HOW TO USE :
+		font-family: 'Lora', serif;
+		font-family: 'Cinzel', serif;
+		font-family: 'Tangerine', cursive;
+		font-family: 'Great Vibes', cursive;
+	*/
+@import url('./hover.css'); /* http://ianlunn.github.io/Hover/ */
+
+/* Formatage Texte Entre-Monde */
+p {
+	font-family: 'Lora', serif;
+	font-size: 11px;
+	font-style: italic;
+	text-align: justify;
+	text-shadow: 1px 2px 25px #FFF;
+	text-indent: 10px; "
+}
+p::first-letter {
+	font-family: 'Tangerine', cursive;
+	font-size: 42px;
+	text-transform: capitalize;
+	color: #FFF;
+	float: left;
+}
+.dialogue {
+	font-family: 'Lora', serif;
+	font-size: 16px;
+	color: #eaffea;
+	text-shadow: 0px 2px 3px #FFF;
+}
+
+@keyframes fadeIn { 0% { opacity: 0; height: 0; } 100% { opacity: 1; height: auto; } }
+
+.animation {
+	transition: all 3s;
+	opacity: 0;
+	height: 0;
+	animation: 5s fadeIn;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
