@@ -40,6 +40,52 @@ p::first-letter {
 	text-shadow: 0px 2px 3px #FFF;
 }
 
+
+/* Bubbles */
+.bubble
+{
+position: relative;
+width: 155px;
+height: 50px;
+padding: 3px;
+background: #FFFFFF;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+border: #7F7F7F solid 1px;
+}
+
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 0 15px 15px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -15px;
+right: -15px;
+top: 50%;
+}
+
+.bubble:before
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 0 15px 15px;
+border-color: transparent #7F7F7F;
+display: block;
+width: 0;
+z-index: 0;
+margin-top: -15px;
+right: -16px;
+top: 50%;
+}
+
+/* DIVERS */
 @keyframes fadeIn { 0% { opacity: 0; height: 0; } 100% { opacity: 1; height: auto; } }
 
 .animation {
@@ -49,19 +95,4 @@ p::first-letter {
 	animation: 5s fadeIn;
 	animation-fill-mode: forwards;
 	overflow: hidden;
-}
-
-[class^="hvr-"] {
-  margin: .4em;
-  padding: 1em;
-  cursor: pointer;
-  background: #e1e1e1;
-  text-decoration: none;
-  color: #666;
-  /* Prevent highlight colour when element is tapped */
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-
-  /* Smooth fonts */
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
